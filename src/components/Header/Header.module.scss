@@ -1,0 +1,12 @@
+.Header {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: calc(var(--spacer) * 2);
+}
+
+.name {
+  font-size: var(--text-xl);
+  font-weight: bold;
+}

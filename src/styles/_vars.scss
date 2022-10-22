@@ -1,0 +1,29 @@
+:root {
+  //colors
+  --clr-gray-25: #fcfcfd;
+  --clr-gray-50: #f9fafb;
+  --clr-gray-100: #f2f4f7;
+  --clr-gray-200: #eaecf0;
+  --clr-gray-300: #d0d5dd;
+  --clr-gray-400: #98a2b3;
+  --clr-gray-500: #667085;
+  --clr-gray-600: #475467;
+  --clr-gray-700: #344054;
+  --clr-gray-800: #1d2939;
+  --clr-gray-800: #101828;
+
+  // font sizing
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.175rem;
+  --display-xs: 1.25rem;
+  --display-sm: 1.875rem;
+  --display-md: 2.25rem;
+  --display-lg: 3rem;
+  --display-xl: 3.75rem;
+
+  // sizing and spacing
+  --spacer: 1rem;
+}
