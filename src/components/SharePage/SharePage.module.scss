@@ -1,0 +1,23 @@
+.SharePage {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  translate: 0 -50%;
+  border: 1px dashed var(--clr-gray-300);
+  height: 50px;
+  width: 50px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    background-color: var(--clr-gray-100);
+  }
+
+  &:active {
+    scale: 0.6;
+    transition: all 0.3s ease-in;
+  }
+}

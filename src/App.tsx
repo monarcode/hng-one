@@ -1,10 +1,8 @@
-import { Content } from '@components/Content';
-import { Footer } from '@components/Footer';
-import { Header } from '@components/Header';
-import { Layout } from '@components/Layout';
+import { Content, Footer, Header, Layout } from '@allComponents';
 import { user } from '@constants/index';
+import { Toaster } from 'react-hot-toast';
 
-function App() {
+function App(): JSX.Element {
   return (
     <>
       <Layout>
@@ -12,8 +10,8 @@ function App() {
         <Content />
         <Footer />
       </Layout>
+      <Toaster />
     </>
   );
 }
-
 export default App;

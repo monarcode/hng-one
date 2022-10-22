@@ -1,3 +1,4 @@
+import { SharePage } from '@components/SharePage';
 import styles from './Header.module.scss';
 
 export interface HeaderProps {
@@ -5,7 +6,7 @@ export interface HeaderProps {
   imageUrl: string;
 }
 
-export function Header({ name, imageUrl }: HeaderProps) {
+export function Header({ name, imageUrl }: HeaderProps): JSX.Element {
   return (
     <div className={styles.Header}>
       <img
@@ -17,6 +18,8 @@ export function Header({ name, imageUrl }: HeaderProps) {
       <p className={styles.name} id="twitter">
         {name}
       </p>
+
+      <SharePage />
     </div>
   );
 }

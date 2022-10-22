@@ -6,10 +6,11 @@ interface ContentProps {
   uid: string;
 }
 
-export function ContentItem({ label, href, uid }: ContentProps): JSX.Element {
+const ContentItem = ({ href, uid, label }: ContentProps) => {
   return (
     <a href={href} id={uid} className={styles.item}>
       {label}
     </a>
   );
-}
+};
+export default ContentItem;

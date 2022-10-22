@@ -13,10 +13,18 @@
   text-align: center;
   text-decoration: none;
   color: var(--clr-gray-900);
+  font-weight: 600;
   transition: all 0.5s ease-out;
 
   &:hover {
     background-color: var(--clr-gray-300);
     transition: all 0.5s ease-out;
   }
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 1rem;
 }
