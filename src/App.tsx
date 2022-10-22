@@ -1,5 +1,7 @@
+import { Content } from '@components/Content';
 import { Footer } from '@components/Footer';
-import { Content, Header, Layout } from '@components/index';
+import { Header } from '@components/Header';
+import { Layout } from '@components/Layout';
 import { user } from '@constants/index';
 
 function App() {

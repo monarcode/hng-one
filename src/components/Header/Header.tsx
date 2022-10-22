@@ -1,8 +1,8 @@
 import styles from './Header.module.scss';
 
 export interface HeaderProps {
-  name?: string;
-  imageUrl?: string;
+  name: string;
+  imageUrl: string;
 }
 
 export function Header({ name, imageUrl }: HeaderProps) {
