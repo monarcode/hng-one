@@ -11,6 +11,12 @@ export function Content(): JSX.Element {
         {listData.map((item) => (
           <ContentItem key={item.id} {...item} />
         ))}
+        <ContentItem
+          uid="contact"
+          label="Contact me"
+          href="/contact"
+          userouter={true}
+        />
         <div className={styles.socials}>
           <img
             id="slack"

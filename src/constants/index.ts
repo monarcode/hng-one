@@ -47,10 +47,4 @@ export const listData = [
     href: "https://books.zuri.team/design-rules",
     uid: "book_design",
   },
-  {
-    id: 7,
-    label: "Contact Me",
-    href: "/contact",
-    uid: "contact-me",
-  },
 ];
