@@ -32,7 +32,8 @@
       "@components/*": ["components/*"],
       "@allComponents": ["components/index"],
       "@styles/*": ["styles/*"],
-      "@constants/*": ["constants/*"]
+      "@constants/*": ["constants/*"],
+      "@pages/*": ["pages/*"]
     }
   },
   "include": ["src/**/*"],

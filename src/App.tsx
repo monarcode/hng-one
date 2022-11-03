@@ -1,17 +1,21 @@
-import { Content, Footer, Header, Layout } from '@allComponents';
-import { user } from '@constants/index';
-import { Toaster } from 'react-hot-toast';
+import { Layout } from "@allComponents";
+import { Toaster } from "react-hot-toast";
+import { Route, Routes } from "react-router-dom";
+import { Content } from "@pages/Content";
+import Contact from "@pages/Contact/Contact";
 
 function App(): JSX.Element {
   return (
     <>
-      <Layout>
-        <Header name={user.handle} imageUrl={user.img_url} />
-        <Content />
-        <Footer />
-      </Layout>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route index element={<Content />} />
+          <Route path="/contact" element={<Contact />} />
+        </Route>
+      </Routes>
       <Toaster />
     </>
   );
 }
+
 export default App;

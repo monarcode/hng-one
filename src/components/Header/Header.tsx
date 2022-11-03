@@ -1,7 +1,7 @@
-import { SharePage } from '@components/SharePage';
-import styles from './Header.module.scss';
+import { SharePage } from "@components/SharePage";
+import styles from "./Header.module.scss";
 
-export interface HeaderProps {
+interface HeaderProps {
   name: string;
   imageUrl: string;
 }

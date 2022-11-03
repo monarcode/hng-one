@@ -22,6 +22,10 @@ export default defineConfig({
         find: '@styles',
         replacement: path.resolve(__dirname, './src/styles'),
       },
+      {
+        find: '@pages',
+        replacement: path.resolve(__dirname, './src/pages'),
+      },
     ],
   },
   plugins: [react()],

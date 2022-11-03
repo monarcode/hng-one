@@ -1,0 +1,49 @@
+import Checkbox from "@components/Checkbox";
+import { Textarea } from "@components/Textarea";
+import Textinput from "@components/Textinput";
+import { user } from "@constants/index";
+import styles from "./Contact.module.scss";
+
+export default function Contact() {
+  return (
+    <>
+      <div className={styles.container}>
+        <h1 className={styles.title}>Contact Me</h1>
+        <p className={styles.subtitle}>
+          Hi there, contact me to ask me about anything you have in mind.
+        </p>
+
+        <form className={styles.form}>
+          <div className={styles.name_wrap}>
+            <Textinput
+              placeholder="Enter first name"
+              label="First name"
+              id="first_name"
+            />
+            <Textinput
+              placeholder="Enter last name"
+              label="Last name"
+              id="last_name"
+            />
+          </div>
+          <Textinput
+            placeholder="yourname@email.com"
+            label="Email"
+            id="email"
+          />
+          <Textarea
+            label="Message"
+            id="message"
+            placeholder="Send me a message and I'll reply you as soon as possible..."
+          />
+          <Checkbox
+            label={`You agree to providing your data to ${user.name} who may contact you.`}
+          />
+          <button id="btn_submit" className={styles.cta}>
+            Send message
+          </button>
+        </form>
+      </div>
+    </>
+  );
+}

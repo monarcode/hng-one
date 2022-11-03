@@ -1,15 +1,14 @@
-import { ReactNode } from "react";
-
 import styles from "./Layout.module.scss";
+import { Outlet } from "react-router-dom";
+import { Footer } from "@components/Footer";
 
-export interface LayoutProps {
-  children?: ReactNode;
-}
-
-export function Layout({ children }: LayoutProps) {
+export function Layout() {
   return (
     <div className={styles.Layout}>
-      <div className={styles.container}>{children}</div>
+      <div className={styles.container}>
+        <Outlet />
+        <Footer />
+      </div>
     </div>
   );
 }
