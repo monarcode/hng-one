@@ -3,10 +3,14 @@ import { Textarea } from "@components/Textarea";
 import Textinput from "@components/Textinput";
 import { user } from "@constants/index";
 import styles from "./Contact.module.scss";
+import { Helmet } from "react-helmet";
 
 export default function Contact() {
   return (
     <>
+      <Helmet>
+        <title>MONACODE - Get in touch</title>
+      </Helmet>
       <div className={styles.container}>
         <h1 className={styles.title}>Contact Me</h1>
         <p className={styles.subtitle}>

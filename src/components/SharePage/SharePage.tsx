@@ -8,11 +8,7 @@ export function SharePage() {
   const link = import.meta.env.PROD ? "www.hng-one.vercel.app" : "...";
 
   useEffect(() => {
-    if (error) {
-      toast.error("Could not copy");
-    } else {
-      // toast.success("Link copied, spread the word");
-    }
+    error ? toast.error("Could not copy") : null;
   }, [error]);
 
   return (
