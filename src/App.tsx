@@ -1,19 +1,24 @@
 import { Layout } from "@allComponents";
 import { Toaster } from "react-hot-toast";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { Content } from "@pages/Content";
 import Contact from "@pages/Contact/Contact";
+import { AnimatePresence } from "framer-motion";
 
 function App(): JSX.Element {
+  const location = useLocation();
+
   return (
     <>
-      <Routes>
-        <Route element={<Layout />}>
-          <Route index element={<Content />} />
-          <Route path="/contact" element={<Contact />} />
-        </Route>
-      </Routes>
-      <Toaster />
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          <Route element={<Layout />}>
+            <Route index element={<Content />} />
+            <Route path="/contact" element={<Contact />} />
+          </Route>
+        </Routes>
+        <Toaster />
+      </AnimatePresence>
     </>
   );
 }
