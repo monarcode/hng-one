@@ -1,3 +1,5 @@
+@import "@styles/mixins";
+
 .checkbox {
   height: 20px;
   width: 20px;
@@ -7,4 +9,8 @@
 .label {
   color: var(--clr-gray-600);
   font-size: var(--text-md);
+
+  @include mobile {
+    font-size: var(--text-sm);
+  }
 }
