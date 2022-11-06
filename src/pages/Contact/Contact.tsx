@@ -4,8 +4,14 @@ import Textinput from "@components/Textinput";
 import { user } from "@constants/index";
 import styles from "./Contact.module.scss";
 import { Helmet } from "react-helmet";
+import toast from "react-hot-toast";
 
 export default function Contact() {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    toast.success("Thank you, we will get back to you");
+  };
   return (
     <>
       <Helmet>
@@ -43,7 +49,11 @@ export default function Contact() {
           <Checkbox
             label={`You agree to providing your data to ${user.name} who may contact you.`}
           />
-          <button id="btn_submit" className={styles.cta}>
+          <button
+            id="btn__submit"
+            onClick={handleSubmit}
+            className={styles.cta}
+          >
             Send message
           </button>
         </form>
