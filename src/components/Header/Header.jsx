@@ -1,12 +1,7 @@
 import { SharePage } from "@components/SharePage";
 import styles from "./Header.module.scss";
 
-interface HeaderProps {
-  name: string;
-  imageUrl: string;
-}
-
-export function Header({ name, imageUrl }: HeaderProps): JSX.Element {
+export function Header({ name, imageUrl }) {
   return (
     <div className={styles.Header}>
       <img

@@ -1,12 +1,7 @@
-import styles from "./Textinput.module.scss";
+import styles from "./styles.module.scss";
 
-interface InputProps {
-  placeholder: string;
-  label: string;
-  id: string;
-}
 
-export default function Textinput({ placeholder, label, id }: InputProps) {
+export default function Textinput({ placeholder, label, id }) {
   return (
     <div className={styles.group}>
       <label id={id} htmlFor={id} className={styles.label}>

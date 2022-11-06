@@ -1,12 +1,7 @@
 import styles from "./styles.module.scss";
 
-interface TextareaProps {
-  label: string;
-  id: string;
-  placeholder: string;
-}
 
-export const Textarea = ({ label, id, placeholder }: TextareaProps) => {
+export const Textarea = ({ label, id, placeholder }) => {
   return (
     <div className={styles.group}>
       <label id={id} htmlFor={id} className={styles.label}>

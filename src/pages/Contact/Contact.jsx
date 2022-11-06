@@ -5,10 +5,9 @@ import { user } from "@constants/index";
 import styles from "./Contact.module.scss";
 import { Helmet } from "react-helmet";
 import toast from "react-hot-toast";
-import React from "react";
 
 export default function Contact() {
-  const handleSubmit = async (e: React.SyntheticEvent) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     toast.success("Thank you, we will get back to you");

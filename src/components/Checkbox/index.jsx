@@ -1,10 +1,6 @@
 import styles from "./style.module.scss";
 
-interface CheckboxProps {
-  label: string;
-}
-
-export default function Checkbox({ label }: CheckboxProps) {
+export default function Checkbox({ label }) {
   return (
     <div className="flex">
       <input

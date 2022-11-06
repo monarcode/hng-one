@@ -1,10 +1,5 @@
 import styles from "./styles.module.scss";
 import { motion } from "framer-motion";
-
-interface PageTransitionProps {
-  children: React.ReactNode;
-}
-
 const pageTransition = {
   hidden: {
     opacity: 0,
@@ -20,7 +15,7 @@ const pageTransition = {
 
 export const PageTransition = ({
   children,
-}: PageTransitionProps): JSX.Element => {
+}) => {
   return (
     <motion.div
       variants={pageTransition}

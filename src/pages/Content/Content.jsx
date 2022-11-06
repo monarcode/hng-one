@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import styles from "./Content.module.scss";
 import ContentItem from "./ContentItem";
 
-export function Content(): JSX.Element {
+export function Content() {
   return (
     <>
       <Header name={user.handle} imageUrl={user.img_url} />

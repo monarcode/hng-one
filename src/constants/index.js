@@ -1,10 +1,5 @@
-interface User {
-  handle: string;
-  img_url: string;
-  name: string;
-}
 
-export const user: User = {
+export const user = {
   handle: "MONARCH",
   img_url: "/dp.webp",
   name: "Ugbah Isioma",

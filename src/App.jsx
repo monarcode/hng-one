@@ -1,11 +1,11 @@
-import { Layout } from "@allComponents";
+import { Layout } from "@components/index";
 import { Toaster } from "react-hot-toast";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { Content } from "@pages/Content";
 import Contact from "@pages/Contact/Contact";
 import { AnimatePresence } from "framer-motion";
 
-function App(): JSX.Element {
+function App() {
   const location = useLocation();
 
   return (
