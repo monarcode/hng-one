@@ -9,12 +9,16 @@ interface TextareaProps {
 export const Textarea = ({ label, id, placeholder }: TextareaProps) => {
   return (
     <div className={styles.group}>
-      <label className={styles.label}>{label}</label>
+      <label id={id} htmlFor={id} className={styles.label}>
+        {label}
+      </label>
       <textarea
+        name={id}
         className={styles.input}
         rows={7}
         id={id}
         placeholder={placeholder}
+        required
       ></textarea>
     </div>
   );

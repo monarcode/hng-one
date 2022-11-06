@@ -13,7 +13,9 @@ export default function Checkbox({ label }: CheckboxProps) {
         name="confirm"
         id="confirm"
       />
-      <label className={styles.label}>{label}</label>
+      <label id="confirm" htmlFor="confirm" className={styles.label}>
+        {label}
+      </label>
     </div>
   );
 }

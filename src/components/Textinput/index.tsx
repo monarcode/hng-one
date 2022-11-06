@@ -9,13 +9,16 @@ interface InputProps {
 export default function Textinput({ placeholder, label, id }: InputProps) {
   return (
     <div className={styles.group}>
-      <label className={styles.label}>{label}</label>
+      <label id={id} htmlFor={id} className={styles.label}>
+        {label}
+      </label>
       <input
         className={styles.input}
         type="text"
         name={id}
         id={id}
         placeholder={placeholder}
+        required
       />
     </div>
   );

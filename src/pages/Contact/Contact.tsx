@@ -18,6 +18,7 @@ export default function Contact() {
       <Helmet>
         <title>MONACODE - Get in touch</title>
       </Helmet>
+
       <div className={styles.container}>
         <h1 className={styles.title}>Contact Me</h1>
         <p className={styles.subtitle}>
