@@ -1,13 +1,19 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import styles from "./Content.module.scss";
 
 const ContentItem = ({ href, uid, label, userouter = false }) => {
+  const navigate = useNavigate();
+
   return (
     <>
       {userouter ? (
-        <Link to={href} id={uid} className={styles.item}>
+        <button
+          onClick={() => navigate("/contact")}
+          id={uid}
+          className={styles.item}
+        >
           {label}
-        </Link>
+        </button>
       ) : (
         <a href={href} id={uid} className={styles.item}>
           {label}
