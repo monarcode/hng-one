@@ -5,7 +5,7 @@ const ContentItem = ({ href, uid, label, userouter = false }) => {
   return (
     <>
       {userouter ? (
-        <Link to={href} id="uid" className={styles.item}>
+        <Link to={href} id={uid} className={styles.item}>
           {label}
         </Link>
       ) : (
